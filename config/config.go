@@ -6,9 +6,9 @@ type Config struct {
 
 type CertificatesConfig struct {
 	// 命中白名单则认为不是CDN
-	WhiteDomain []string
+	WhiteDomain []string `json:"white_domain"`
 	// 命中黑名单则认为是CDN
-	BlackDomain []string
+	BlackDomain []string `json:"black_domain"`
 }
 
 var Instance = &Config{}
