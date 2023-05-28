@@ -22,12 +22,12 @@ func (c *CertificateChecker) Check(ip string) (isCDN bool, trust bool, err error
 
 	seedUrl := fmt.Sprintf("https://%s", ip)
 	resp, err := client.Get(seedUrl)
-	defer resp.Body.Close()
 
 	if err != nil {
-		fmt.Errorf(seedUrl, " 请求失败")
-		panic(err)
+		return false, false, fmt.Errorf(seedUrl, " 请求失败")
 	}
+
+	defer resp.Body.Close()
 
 	conf := config.Instance.Certificates
 
