@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"host-cdn-checker/config"
-	"host-cdn-checker/manager"
+	"github.com/taropowder/host-cdn-checker/config"
+	"github.com/taropowder/host-cdn-checker/manager"
 )
 
 func main() {

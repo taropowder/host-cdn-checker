@@ -2,7 +2,7 @@ package checkers
 
 import (
 	"fmt"
-	"host-cdn-checker/config"
+	"github.com/taropowder/host-cdn-checker/config"
 	"testing"
 )
 

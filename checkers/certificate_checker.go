@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"fmt"
 	log "github.com/sirupsen/logrus"
-	"host-cdn-checker/config"
+	"github.com/taropowder/host-cdn-checker/config"
 
 	"net/http"
 	"strings"
