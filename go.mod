@@ -1,4 +1,4 @@
-module host-cdn-checker
+module github.com/taropowder/host-cdn-checker
 
 go 1.19
 
