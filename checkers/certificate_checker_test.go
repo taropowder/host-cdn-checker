@@ -9,6 +9,6 @@ import (
 func TestCertificateChecker_Check(t *testing.T) {
 	c := CertificateChecker{}
 	config.Instance = &config.Config{}
-	config.Instance.Certificates.BlackDomain = []string{"cdn"}
-	fmt.Println(c.Check("124.236.18.244"))
+	config.Instance.Certificates.BlackDomain = []string{"cdn", "chinanetcenter.com"}
+	fmt.Println(c.Check("103.254.188.41"))
 }
