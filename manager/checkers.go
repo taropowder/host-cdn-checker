@@ -1,6 +1,8 @@
 package manager
 
-import "github.com/taropowder/host-cdn-checker/checkers"
+import (
+	"github.com/taropowder/host-cdn-checker/checkers"
+)
 
 type Checker interface {
 	Check(ip string) (bool, bool, error)
